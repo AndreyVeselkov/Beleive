@@ -1,0 +1,17 @@
+<svg width="58" height="54" viewBox="0 0 58 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>arrows</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(724 356)">
+<g id="arrows">
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="translate(-696 -352)" fill="#1B87E5"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="translate(-720 -352)" fill="#1B87E5"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 23 23L 26.182 26.182L 29.364 23L 26.182 19.818L 23 23ZM -3.18198 3.18198L 19.818 26.182L 26.182 19.818L 3.18198 -3.18198L -3.18198 3.18198ZM 19.818 19.818L -3.18198 42.818L 3.18198 49.182L 26.182 26.182L 19.818 19.818Z"/>
+</defs>
+</svg>

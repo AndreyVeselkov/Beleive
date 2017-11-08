@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Caregivers</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+			<!--   STYLESHEATS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+		
+			<!--   FONTS -->
+			
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel=“stylesheet”>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+
+
+
+</head>
+
+<body>
+   <div id="mask" class="mask"></div>
+    <div class="blue-bg">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.svg" alt="believe-logo" title="logo"></a>
+		</div>
+		<div class="nav">
+			<ul class="main-nav" role="menu">
+				<li class="dropdown"><a href="index.html">Home <i class="material-icons">arrow_drop_down</i></a>
+					<div class="dropdown-content">
+						<a href="index.html#caregivers">Caregivers</a>
+						<a href="index.html#technology">Technology</a>
+						<a href="index.html#sevices">Sevices</a>
+					</div>
+				
+				</li>
+				<li class="dropdown"><a href="about-us.html">About <i class="material-icons">arrow_drop_down</i></a>
+					<div class="dropdown-content">
+						<a href="about-us.html#values">Our Values</a>
+						<a href="about-us.html#team">Leadership Team</a>
+					</div>
+				
+				</li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="caregivers.html"><a class="caregiver" href="caregivers.html">Become a Caregiver</a></a></li>
+			</ul>
+		</div>
+		<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a class="logo-link" href="index.html"><img src="images/footer-logo.svg" alt="mobile-menu-logo"/></a>
+				<div class="mob-buttons">
+					<div class="row">
+						<div class="col-xs-6">
+							<a href="/platform/">Login</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="contact-us.html">Contact Us</a>
+						</div>
+						<div class="col-xs-12">
+							<a href="caregivers.html">Become a Caregiver</a>
+						</div>
+					</div>
+				</div>
+				<div class="menu-accord">
+					<a class="with-drop" href="index.html">Home</a>
+			 		<div class="drop" onclick="myAccFunc()"><i class="material-icons" >arrow_drop_down</i></div>
+				 		<div id="demoAcc" class="hide w3-white w3-card-2">
+							<a href="index.html#caregivers" class="accord-link">Caregivers</a>
+				 			<a href="index.html#technology" class="accord-link">Technology</a>
+				 			<a href="index.html#sevices" class="accord-link">Sevices</a>
+				 		</div>
+				 </div>
+				 <div class="menu-accord">	
+				 	<a class="with-drop" href="about-us.html">About</a>
+			 		<div class="drop" onclick="myAccFunc1()"><i class="material-icons" >arrow_drop_down</i></div>
+				 		<div id="demoAcc1" class="hide w3-white w3-card-2">
+							<a href="#values" class="accord-link">Our Values</a>
+				 			<a href="#team" class="accord-link">Leadership Team</a>
+				 		</div>
+				  </div>
+				<a href="faq.html">FAQ</a>
+				<a href="partners.html">Partners</a>
+				<a href="#">EOE policy</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms of Service</a>
+			</div>
+
+
+			<span class="burger" onclick="openNav()">&#9776;</span>
+		<div class="login">
+			<a id="login" href="/platform/">Login</a>
+			<a id="contact" class="btn-outline" href="contact-us.html">Contact Us</a>
+			<a id="header-phone" class="btn-filled">(215)366-2878</a>
+			
+		</div>
+	</div>
+	</div>
+	<div class="caregivers-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 no-pad">
+					<h1>Are you an amazing caregiver?</h1>
+						<p>Join Us. We’re hiring in Central and Lower Bucks County. We employ the best caregivers and treat them better than any other home care agency. Great caregivers deserve stable, fulfilling and well-paying careers!</p>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-caregivers">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 caregiver-icons">
+					<p class="with-icon gift semibold blue">
+						Better Pay
+					</p>
+					<p class="with-icon">
+						We pay 10% to 15% or more than other agencies, provide 1.5x for overtime and 2x for holidays. Plus you can earn performance-based bonuses and pay increases. Great caregivers deserve greater rewards!
+					</p>
+					<p class="with-icon people semibold blue">
+						Respect
+					</p>
+					<p class="with-icon">
+						Flexible schedules, real-time access to client records, influence over care plans, collaborate directly with families, and 24/7 support from the office. As a Care Pro, you are interacting daily with clients and that makes you the most valuable member of the Believe care team.
+					</p>	
+					<p class="with-icon rocket semibold blue">
+						Career Development
+					</p>
+					<p class="with-icon">
+						Compassion, patience and dependability – these are the fundamental attributes of a great career. Take advantage of our paid internal training programs and growth opportunities. Whether you are starting out or experienced – take your career to the next level!
+					</p>	
+				</div>
+				<div class="col-lg-6 col-md-6 no-pad">
+					<form id="caregivers">
+							<div class="form-row fields">
+							<p id="errorMessage" style="display: none;">
+               	 				Please fill in all reuired fields
+              				</p>
+              				<p id="success">Your message sent successfully.</p>
+								<input id="name" type="text" name="name" placeholder="Full Name"/>
+							</div>
+							<div class="form-row fields">
+								<input id="email" type="email" name="email" placeholder="Email Address"/>
+							</div>
+							<div class="form-flex">
+							<div class="form-row half">
+									<input id="phone" type="text" name="phone" placeholder="Phone"/>
+							</div>
+							<div class="form-row half">
+									<input id="zip" type="text" name="zip" placeholder="ZIP Code"/>
+								</div>
+							</div>
+							<!--<div class="form-row">
+								<p>Are you at 18 or older?</p>
+								
+								
+								<div class="radio">
+									<input id="radio-1" name="radio" type="radio" checked="">
+									<label for="radio-1" class="radio-label" value="yes">Yes</label>
+									<input id="radio-2" name="radio" type="radio">
+									<label for="radio-2" class="radio-label" value="no">No</label>
+								</div>
+							</div>-->
+							
+							<div class="form-row form-checkbox radio">
+              <label id="choose">Are you at 18 or older?</label><br>
+              <label id="adulthood">
+                <input type="checkbox" name="adulthood" class="option-input checkbox" value="true">
+                Yes
+              </label>
+			  </div
+              
+							
+							
+							
+							
+							<div class="form-row">
+								<input type="submit" value="Apply to be a Caregiver"/>
+							
+							</div>
+					</form>
+					<div class="question">
+						<p class="blue">Questions?</p>
+						<p class="blue large">(215)366-2857</p>
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="requirements">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 no-pad">
+					<h2>What are the job requirements?</h2>
+					<p class="semibold">To apply, you must meet ALL of these basic Care Pro requirements:</p>
+					<div class="list-with-arrows">
+						<p>Be age 18 or older.</p>
+						<p>Be physically capable of assisting clients with mobility, including lifting and transferring.</p>
+						<p>Pass a comprehensive background check.</p>
+						<p>Ability to read, write, speak and understand English as needed for the job.</p>
+						<p>Have a smart phone and know how to use it (training available).</p>
+						<p>Have a valid driver’s license & use of an insured car, or access to adequate transportation.</p>
+						<p>Have a genuine desire to provide compassionate care to those in need.</p>
+					</div>
+					<p class="warning">Believe Home Care is an equal opportunity employer.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-logo">
+			<a href="index.html"><img src="images/footer-logo.svg" alt="footer-logo"></a>
+		</div>
+		<div class="nav">
+			<ul class="footer-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about-us.html">About</a></li>
+				<li><a href="faq.html">FAQS</a></li>
+				<li><a class="footer-caregiver" href="caregivers.html">Caregivers</a></li>
+				<li><a href="partners.html">Partners</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">EOE</a></li>
+				<li><a href="#">Terms of Service</a></li>
+			</ul>
+		</div>
+		<div class="social">
+			<a href="#"><img src="images/facebook.svg" alt=""></a>
+			<a href="#"><img src="images/linkedin.svg" alt=""></a>
+		</div>
+		<div class="footer-contact">
+			<a class="btn-outline" href="contact-us.html">Contact Us</a>
+			<a class="btn-filled">(215)366-2878</a>
+		</div>
+	</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/validate.js"></script>
+	<script>
+
+		/*jQuery("#caregivers").submit(function() {
+            var form_data = jQuery(this).serialize();
+            jQuery.ajax({
+            type: "POST",
+            url: "/platform/api/v1/to-be-caregiver/",
+            data: form_data,
+            success: function(){
+        		document.getElementById("success").style.display = "block";}
+				});
+				$("#caregivers")[0].reset();
+      return false;
+
+	});*/
+	
+	jQuery("#caregivers").submit(function () {
+        var form_data = jQuery(this).serialize();
+        jQuery.ajax({
+            type: "POST",
+            url: "/platform/api/v1/to-be-caregiver/",
+            data: form_data,
+            dataType: 'json',
+        }).done(function () {
+            document.getElementById("success").style.display = "block";
+			$("#caregivers")[0].reset();
+        }).fail(function (data) {
+            console.log(data.responseJSON);
+            $.each(data.responseJSON, function (key, value) {
+                alert(key + ": " + value);
+               // $("#errorMessage").append("<p class='errorMessage'>Error:" + value + "</p>");
+			   /*if (key=="name"){
+					$('#name').reset();
+				}
+				if (key=="email"){
+					$('#email').reset();
+				}
+				if (key=="phone"){
+					$('#phone').reset();
+				}
+				if (key=="zip"){
+					$('#zip').reset();
+				}
+				
+				*/
+            });
+        });
+			
+			return false;
+    });
+	</script>
+</body>

@@ -1,0 +1,41 @@
+<svg width="236" height="221" viewBox="0 0 236 221" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>glass</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-133 -1258)">
+<g id="glass">
+<g id="Ellipse 11">
+<use xlink:href="#path0_fill" transform="translate(142 1258)" fill="#F4F6F8"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(142 1258)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(142 1258)" fill="#1B87E5"/>
+</g>
+</g>
+<g id="Rectangle 25">
+<use xlink:href="#path2_fill" transform="matrix(0.735388 0.677646 -0.677646 0.735388 156.786 1380.97)" fill="#F4F6F8"/>
+</g>
+<g id="Rectangle 24">
+<use xlink:href="#path3_fill" transform="matrix(0.707107 0.707107 -0.707107 0.707107 323.071 1430)" fill="#1B87E5"/>
+</g>
+<g id="Rectangle 24">
+<use xlink:href="#path4_fill" transform="matrix(0.707107 0.707107 -0.707107 0.707107 310.071 1417)" fill="#1B87E5"/>
+</g>
+<g id="Union">
+<use xlink:href="#path5_fill" transform="matrix(0.794413 -0.607378 0.607378 0.794413 338 1321.65)" fill="#1B87E5"/>
+</g>
+<g id="Union">
+<use xlink:href="#path6_fill" transform="translate(135.5 1300.95)" fill="#1B87E5"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 196 98C 196 152.124 152.124 196 98 196C 43.8761 196 0 152.124 0 98C 0 43.8761 43.8761 0 98 0C 152.124 0 196 43.8761 196 98Z"/>
+<path id="path1_stroke_2x" d="M 187 98C 187 147.153 147.153 187 98 187L 98 205C 157.094 205 205 157.094 205 98L 187 98ZM 98 187C 48.8467 187 9 147.153 9 98L -9 98C -9 157.094 38.9055 205 98 205L 98 187ZM 9 98C 9 48.8467 48.8467 9 98 9L 98 -9C 38.9055 -9 -9 38.9055 -9 98L 9 98ZM 98 9C 147.153 9 187 48.8467 187 98L 205 98C 205 38.9055 157.094 -9 98 -9L 98 9Z"/>
+<path id="path2_fill" d="M 0 0L 28.4423 0L 28.4423 35L 0 35L 0 0Z"/>
+<path id="path3_fill" d="M 0 0L 54 0C 57.3137 0 60 2.68629 60 6C 60 9.31371 57.3137 12 54 12L 0 12L 0 0Z"/>
+<path id="path4_fill" d="M 0 1C 0 0.447715 0.447715 0 1 0L 12 0C 12.5523 0 13 0.447715 13 1L 13 11C 13 11.5523 12.5523 12 12 12L 1 12C 0.447715 12 0 11.5523 0 11L 0 1Z"/>
+<path id="path5_fill" fill-rule="evenodd" d="M 29.5051 8.99998C 31.9904 8.99718 34.0028 6.98009 33.9999 4.49488C 33.9971 2.00955 31.98 -0.00281561 29.4948 2.9572e-06L 9.50002 0.0229354L 9.5 0.0143167L 3.99999 0.0143023L 0 9.0143L 4.50512 9.01428L 4.50511 9.02872L 29.5051 8.99998Z"/>
+<path id="path6_fill" fill-rule="evenodd" d="M 105.2 97.7083L 130.517 13.3177L 153.356 59.7833C 155.196 63.5272 160.037 64.593 163.279 61.9681L 180.507 48.0218L 180.517 48.0339L 181.95 46.8533L 182.331 46.5449L 182.329 46.5417L 184.762 44.5374L 182.129 35.0473L 176.252 39.8868L 160.051 53.0019L 135.785 3.63362C 133.179 -1.66851 125.424 -1.02568 123.726 4.63313L 98.3164 89.3322L 75.7973 47.4C 73.6797 43.457 68.3037 42.7839 65.2793 46.0831L 1.18283 116.007C -0.496533 117.839 -0.372769 120.685 1.45927 122.364C 3.2913 124.044 6.13785 123.92 7.81722 122.088L 69.5343 54.7603L 93.2475 98.916C 95.989 104.021 103.535 103.258 105.2 97.7083Z"/>
+</defs>
+</svg>
