@@ -1,0 +1,277 @@
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact us</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+			<!--   STYLESHEATS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+		
+			<!--   FONTS -->
+			
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel=“stylesheet”>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+
+
+
+</head>
+
+<body>
+   <div id="mask" class="mask"></div>
+    <div class="blue-bg">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.svg" alt="believe-logo"  title="logo"></a>
+		</div>
+		<div class="nav">
+			<ul class="main-nav" role="menu">
+				<li class="dropdown"><a href="index.html">Home <i class="material-icons">arrow_drop_down</i></a>
+					<div class="dropdown-content">
+						<a href="index.html#caregivers">Caregivers</a>
+						<a href="index.html#technology">Technology</a>
+						<a href="index.html#sevices">Sevices</a>
+					</div>
+				
+				</li>
+				<li class="dropdown"><a href="about-us.html">About <i class="material-icons">arrow_drop_down</i></a>
+					<div class="dropdown-content">
+						<a href="about-us.html#values">Our Values</a>
+						<a href="about-us.html#team">Leadership Team</a>
+					</div>
+				
+				</li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="caregivers.html"><a class="caregiver" href="caregivers.html">Become a Caregiver</a></a></li>
+			</ul>
+		</div>
+		<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a class="logo-link" href="index.html"><img src="images/footer-logo.svg" alt=""/></a>
+				<div class="mob-buttons">
+					<div class="row">
+						<div class="col-xs-6">
+							<a href="http://45.79.186.167/platform/">Login</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="contact-us.html">Contact Us</a>
+						</div>
+						<div class="col-xs-12">
+							<a href="caregivers.html">Become a Caregiver</a>
+						</div>
+					</div>
+				</div>
+				<div class="menu-accord">
+					<a class="with-drop" href="index.html">Home</a>
+			 		<div class="drop" onclick="myAccFunc()"><i class="material-icons" >arrow_drop_down</i></div>
+				 		<div id="demoAcc" class="hide w3-white w3-card-2">
+							<a href="index.html#caregivers" class="accord-link">Caregivers</a>
+				 			<a href="index.html#technology" class="accord-link">Technology</a>
+				 			<a href="index.html#sevices" class="accord-link">Sevices</a>
+				 		</div>
+				 </div>
+				 <div class="menu-accord">	
+				 	<a class="with-drop" href="about-us.html">About</a>
+			 		<div class="drop" onclick="myAccFunc1()"><i class="material-icons" >arrow_drop_down</i></div>
+				 		<div id="demoAcc1" class="hide w3-white w3-card-2">
+							<a href="#values" class="accord-link">Our Values</a>
+				 			<a href="#team" class="accord-link">Leadership Team</a>
+				 		</div>
+				  </div>
+				<a href="faq.html">FAQ</a>
+				<a href="partners.html">Partners</a>
+				<a href="#">EOE policy</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms of Service</a>
+			</div>
+
+
+			<span class="burger" onclick="openNav()">&#9776;</span>
+		<div class="login">
+			<a id="login" href="http://45.79.186.167//platform/">Login</a>
+			<a id="contact" class="btn-outline" href="contact-us.html">Contact Us</a>
+			<a id="header-phone" class="btn-filled">(215)366-2878</a>
+			
+		</div>
+	</div>
+	</div>
+	<div class="contact-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>We just need a few details and we’ll be in touch shortly!</h1>
+						
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact-form contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-xs-12">
+						<h2>Everyone's care needs are different</h2>
+						<p id="less-wider">Leave your information and we’ll contact you to answer your questions and provide advice for you, or your loved one.</p>
+						<p class="large">In a hurry? Give us a call <span class="blue large">(215)366-2878</span></p>
+						<!--<a class="btn-filled" href="tel:215-345-5555">Make a Call</a>-->
+					</div>
+					<div class="col-lg-6 col-xs-12">
+						<form id="contact-us">
+                     <div class="form-row">
+              <p class="lead">Who needs care?</p>
+              <p id="errorMessage" style="display: none;">
+                Please fill-in all required fields
+              </p>
+              <p id="success">Your message sent successfully.</p>
+              <div class="radio">
+                <input id="radio-1" name="radio" onclick="javascript:yesnoCheck();" type="radio"
+                       checked="">
+                <label for="radio-1" class="radio-label">Me</label>
+                <input id="radio-2" name="radio" onclick="javascript:yesnoCheck();" type="radio">
+                <label for="radio-2" class="radio-label">A loved one</label>
+              </div>
+            </div>
+            <div id="their-name" class="form-row name">
+              <input type="text" name="their_name" placeholder="Their Name (First and/or Last)">
+            </div>
+            <div class="form-row name">
+              <input id="yourName" type="text" name="your_name" placeholder="Your Name (First and Last)">
+            </div>
+            <div class="form-row form-checkbox">
+              <label id="choose">Choose a way to communicate</label><br>
+              <label id="form-mail">
+                <input type="checkbox" name="mail-check" class="option-input checkbox">
+                Email
+              </label>
+              <label id="form-phone">
+                <input type="checkbox" name="phone-check" class="option-input checkbox">
+                Phone
+              </label>
+            </div>
+            <div id="comm-email" class="form-row name">
+              <input type="text" name="email" placeholder="Email">
+            </div>
+            <div id="comm-phone" class="form-row name">
+              <input type="text" name="phone" placeholder="Phone (format: +123456789)">
+            </div>
+            <div class="form-row zip">
+              <input id="zip" type="text" name="zip" placeholder="ZIP (where care is desired)">
+            </div>
+            <div class="form-row questions">
+              <textarea name="comment" placeholder="Questions or comments"></textarea>
+            </div>
+            <div class="form-row hear">
+              <select name="how" class="form-control new-icon" id="sel1">
+                <option selected="" disabled="" hidden="">How did you hear about us?</option>
+                <option class="dd">Friends or family</option>
+                <option class="dd">News article</option>
+                <option class="dd">Facebook</option>
+                <option class="dd">Online</option>
+                <option class="dd">Print Ad</option>
+                <option class="dd">Senior community center</option>
+                <option class="dd">Nursing home</option>
+                <option class="dd">Hospital</option>
+                <option class="dd">Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+                            <input type="submit" value="Send Request">
+                        </div>
+
+
+                    </form>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<div class="footer">
+		<div class="footer-logo">
+			<a href="index.html"><img src="images/footer-logo.svg" alt="footer-logo"></a>
+		</div>
+		<div class="nav">
+			<ul class="footer-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about-us.html">About</a></li>
+				<li><a href="faq.html">FAQS</a></li>
+				<li><a class="footer-caregiver" href="caregivers.html">Caregivers</a></li>
+				<li><a href="partners.html">Partners</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">EOE</a></li>
+				<li><a href="#">Terms of Service</a></li>
+			</ul>
+		</div>
+		<div class="social">
+			<a href="#"><img src="images/facebook.svg" alt=""></a>
+			<a href="#"><img src="images/linkedin.svg" alt=""></a>
+		</div>
+		<div class="footer-contact">
+			<a class="btn-outline" href="contact-us.html">Contact Us</a>
+			<a class="btn-filled">(215)366-2878</a>
+		</div>
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script type="text/javascript" src="js/script.js"></script>
+   <script type="text/javascript" src="js/validate.js"></script>
+    <script type="text/javascript">
+    function yesnoCheck() {
+        if (document.getElementById('radio-2').checked) {
+            document.getElementById('their-name').style.display = 'block';
+        } else {
+            document.getElementById('their-name').style.display = 'none';
+        }
+    }
+
+    $('.option-input.checkbox').click(function (e) {
+        var self = $(e.currentTarget);
+        var name = self.attr('name');
+        if (name == 'mail-check') {
+            if (self.is(':checked')) {
+                $('#comm-email').fadeIn();
+            } else {
+                $('#comm-email').fadeOut();
+            }
+        }
+        if (name == 'phone-check') {
+            if (self.is(':checked')) {
+                $('#comm-phone').fadeIn();
+            } else {
+                $('#comm-phone').fadeOut();
+            }
+        }
+    });
+		
+	
+	
+	jQuery("#contact-us").submit(function () {
+        var form_data = jQuery(this).serialize();
+        jQuery.ajax({
+            type: "POST",
+            url: "/platform/api/v1/who-needs-care/",
+            data: form_data,
+            dataType: 'json',
+        }).done(function () {
+            document.getElementById("success").style.display = "block";
+			$("#contact-us")[0].reset();
+        }).fail(function (data) {
+            console.log(data.responseJSON);
+            $.each(data.responseJSON, function (key, value) {
+                alert(key + ": " + value);
+               // $("#errorMessage").append("<p class='errorMessage'>Error:" + value + "</p>");
+			   if (key=="phone"){
+					$('#comm-phone input').reset();
+				}
+				if (key=="email"){
+					$('#comm-email input').reset();
+				}
+            });
+        });
+			
+			return false;
+    });
+</script>
+</body>
