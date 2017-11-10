@@ -1,0 +1,24 @@
+<svg width="31" height="31" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Youtube_ico</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1388 734)">
+<g id="Youtube_ico">
+<mask id="mask0_alpha" mask-type="alpha">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1388 -734)" fill="#C4C4C4"/>
+</g>
+</mask>
+<g id="Vector" mask="url(#mask0_alpha)">
+<use xlink:href="#path1_fill" transform="translate(1383 -734)" fill="#E02F2F"/>
+</g>
+<g id="Vector" mask="url(#mask0_alpha)">
+<use xlink:href="#path2_fill" transform="translate(1400 -724)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 15.5C 0 6.93959 6.93959 0 15.5 0L 15.5 0C 24.0604 0 31 6.93959 31 15.5L 31 15.5C 31 24.0604 24.0604 31 15.5 31L 15.5 31C 6.93959 31 0 24.0604 0 15.5L 0 15.5Z"/>
+<path id="path1_fill" d="M 40.5899 6.68954C 40.5899 6.68954 40.19 3.65025 38.9609 2.31208C 37.4011 0.558 35.6542 0.547667 34.8532 0.448208C 29.1153 1.53979e-07 20.509 0 20.509 0L 20.4897 0C 20.4897 0 11.8835 1.53979e-07 6.1468 0.448208C 5.34576 0.547667 3.60016 0.558 2.03911 2.31208C 0.811285 3.65025 0.410128 6.68954 0.410128 6.68954C 0.410128 6.68954 0 10.2558 0 13.8221L 0 17.165C 0 20.7338 0.410128 24.2988 0.410128 24.2988C 0.410128 24.2988 0.810003 27.3368 2.03911 28.6724C 3.60016 30.4265 5.64695 30.3735 6.55949 30.557C 9.83923 30.8954 20.5 31 20.5 31C 20.5 31 29.1153 30.9845 34.8532 30.5415C 35.6542 30.4381 37.4011 30.4278 38.9609 28.6737C 40.1887 27.3381 40.5899 24.3001 40.5899 24.3001C 40.5899 24.3001 41 20.7338 41 17.1663L 41 13.8234C 41 10.2558 40.5899 6.68954 40.5899 6.68954Z"/>
+<path id="path2_fill" d="M 0 0L 0 12L 10 6L 0 0Z"/>
+</defs>
+</svg>
