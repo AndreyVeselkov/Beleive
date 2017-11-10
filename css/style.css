@@ -60,10 +60,10 @@ h1,h2, h3, h4, h5, h6 {
 .main-nav li a:hover{
 	color: #01579b;
 }
-.main-nav li:nth-child(3){
+.main-nav li:nth-child(4){
 	margin-right: 15px;
 }
-.main-nav li:nth-child(4){
+.main-nav li:nth-child(5){
 	padding-left: 15px;
 	border-left: 1px solid #37464f;
 }
@@ -1566,6 +1566,7 @@ p.large{
 .footer{
 	display: flex;
 	display: -webkit-flex;
+	flex-wrap: wrap;
 	width: 100%;
 	background: #0068ac;
 	padding: 30px 40px 30px 30px;
@@ -1578,9 +1579,10 @@ p.large{
 .footer-nav{
 	float: left;
 	list-style: none;
-	padding-left: 40px;
+	padding-left: 20px;
 	margin-bottom: 0;
-	padding-right: 30px;
+	padding-right: 20px;
+	padding-bottom: 10px;
 }
 .footer-nav li{
 	margin-right: 11px;
@@ -1637,10 +1639,28 @@ p.large{
 .footer-contact .btn-outline:hover{
 	color:#0068ac;
 }
-
-
-
-
+.address{
+	padding-left: 20px;
+} 
+.address a{
+	position: relative;
+	color: #80b4d6;
+	padding-left: 15px;
+	font-size: 14px;
+} 
+.address a:before{
+	position: absolute;
+	content: '';
+	left: -2px;
+	top: 0;
+	background: url(../images/location_ico.svg) center center no-repeat;
+	background-size: contain;
+	height: 18px;
+	width: 14px;
+}
+.address.mobile{
+	display: none;
+}
 
 
 
@@ -2150,7 +2170,7 @@ form textarea::placeholder{
     background-size: 30px;
 }
 .footer{
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	align-items: center;
 	padding: 30px 20px;
 	justify-content: space-around;
@@ -2164,6 +2184,12 @@ form textarea::placeholder{
 .footer-contact{
 	justify-content:space-around;
 	}
+.address.mobile {
+    display: block; 
+    width: 100%;
+	padding-left: 75px;
+    padding-top: 10px;
+}	
 /*.footer-contact a{
 	width: 50%;
 	}*/
@@ -2938,7 +2964,7 @@ form textarea:placeholder{
 	left: 277px;
 	}
 .footer{
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	align-items: center;
 	padding: 30px 20px;
 	justify-content: space-around;
@@ -2952,7 +2978,12 @@ form textarea:placeholder{
 .footer-contact{
 	justify-content:space-around;
 	}
-
+.address.mobile {
+    display: block; 
+    width: 100%;
+	padding-left: 30px;
+    padding-top: 10px;
+}
 /**** MOBILE HOME END ****/
 .about-banner{
 	background: url(../images/about-banner.jpg) -400px center no-repeat;
@@ -4528,6 +4559,14 @@ div.message{
 .footer-contact a{
 	width: 50%;
 	}
+.address.mobile{
+	display: inline-block;
+	padding-left: 0;
+	margin-top: 27px;
+}
+.address.mobile a{
+	display: inline-block;
+}
 
 /**** MOBILE HOME END ****/
 .about-banner{
@@ -4998,8 +5037,12 @@ form textarea::placeholder{
     font-size: 14px;
 	padding-left: 6px;
 }
-	
-
+.footer{
+	padding: 25px 15px;	
+	}
+.social img{
+	margin-right: 5px;	
+	}
 /*** MEDIA 320 ABOUT ***/
 .about-banner-text {
     background: url(../images/about-banner-text-bg-mob.png) center center no-repeat;
