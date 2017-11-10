@@ -85,7 +85,7 @@ function checkForScrolling() {
             var form_data = jQuery(this).serialize();
             jQuery.ajax({
             type: "POST",
-            url: "http://45.79.186.167//platform/api/v1/who-needs-care/",
+            url: "http://believehomecare.com/platform/api/v1/who-needs-care/",
             data: form_data,
            success: function(){
         		document.getElementById("success").style.display = "block";}
@@ -101,7 +101,7 @@ function checkForScrolling() {
             var form_data = jQuery(this).serialize();
             jQuery.ajax({
             type: "POST",
-            url: "http://45.79.186.167//platform/api/v1/who-needs-care/",
+            url: "http://believehomecare.com/platform/api/v1/who-needs-care/",
             data: form_data,
             success: function(){
         		document.getElementById("success").style.display = "block";}

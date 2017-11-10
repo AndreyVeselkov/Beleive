@@ -1,4 +1,14 @@
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109299741-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+  		gtag('config', 'UA-109299741-1');
+	</script>
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact us</title>
@@ -45,6 +55,7 @@
 				
 				</li>
 				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="http://www.believehomecareblog.com">Blog</a></li>
 				<li><a href="caregivers.html"><a class="caregiver" href="caregivers.html">Become a Caregiver</a></a></li>
 			</ul>
 		</div>
@@ -54,7 +65,7 @@
 				<div class="mob-buttons">
 					<div class="row">
 						<div class="col-xs-6">
-							<a href="http://45.79.186.167/platform/">Login</a>
+							<a href="/platform/">Login</a>
 						</div>
 						<div class="col-xs-6">
 							<a href="contact-us.html">Contact Us</a>
@@ -82,6 +93,7 @@
 				 		</div>
 				  </div>
 				<a href="faq.html">FAQ</a>
+				<a href="http://www.believehomecareblog.com">Blog</a>
 				<a href="partners.html">Partners</a>
 				<a href="#">EOE policy</a>
 				<a href="#">Privacy Policy</a>
@@ -91,7 +103,7 @@
 
 			<span class="burger" onclick="openNav()">&#9776;</span>
 		<div class="login">
-			<a id="login" href="http://45.79.186.167//platform/">Login</a>
+			<a id="login" href="/platform/">Login</a>
 			<a id="contact" class="btn-outline" href="contact-us.html">Contact Us</a>
 			<a id="header-phone" class="btn-filled">(215) 366-2878</a>
 			
@@ -186,8 +198,11 @@
 					</div>
 				</div>
 			</div>
+		
 		</div>
-
+<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.6228167990585!2d-75.13355508460744!3d40.30633307937815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6a818086d6143%3A0x81c89d483599c497!2s96+W+Ashland+St%2C+Doylestown%2C+PA+18901%2C+USA!5e0!3m2!1sen!2sua!4v1510312316925" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 
 	<div class="footer">
 		<div class="footer-logo">
@@ -198,12 +213,16 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about-us.html">About</a></li>
 				<li><a href="faq.html">FAQS</a></li>
+				<li><a href="http://www.believehomecareblog.com">Blog</a></li>
 				<li><a class="footer-caregiver" href="caregivers.html">Caregivers</a></li>
 				<li><a href="partners.html">Partners</a></li>
 				<li><a href="#">Privacy Policy</a></li>
 				<li><a href="#">EOE</a></li>
 				<li><a href="#">Terms of Service</a></li>
 			</ul>
+			<div class="address">
+				<a href="https://goo.gl/maps/MisWdqqrVyM2" target="_blank">Believe Home Care, LLC. 196 W. Ashland St., Doylestown, PA 18901</a>
+			</div>
 		</div>
 		<div class="social">
 			<a href="https://www.facebook.com/BelieveHomeCareLLC/"><img src="images/facebook.svg" alt=""></a>
@@ -215,6 +234,9 @@
 			<a class="btn-outline" href="contact-us.html">Contact Us</a>
 			<a class="btn-filled">(215) 366-2878</a>
 		</div>
+		<div class="address mobile">
+				<a href="https://goo.gl/maps/MisWdqqrVyM2" target="_blank">Believe Home Care, LLC. 196 W. Ashland St., Doylestown, PA 18901</a>
+			</div>
 	</div>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 	<script type="text/javascript" src="js/script.js"></script>
@@ -253,7 +275,7 @@
         var form_data = jQuery(this).serialize();
         jQuery.ajax({
             type: "POST",
-            url: "/platform/api/v1/who-needs-care/",
+            url: "http://45.79.186.167/platform/api/v1/who-needs-care/",
             data: form_data,
             dataType: 'json',
         }).done(function () {

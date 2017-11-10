@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109299741-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109299741-1');
+</script>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +56,9 @@
 
 				</li>
 				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="http://www.believehomecareblog.com">Blog</a></li>
 				<li><a class="caregiver" href="caregivers.html">Become a Caregiver</a></li>
+				
 			</ul>
 		</div>
 		<div id="mySidenav" class="sidenav">
@@ -56,7 +67,7 @@
 				<div class="mob-buttons">
 					<div class="row">
 						<div class="col-xs-6">
-							<a href="http://45.79.186.167/platform/">Login</a>
+							<a href="/platform/">Login</a>
 						</div>
 						<div class="col-xs-6">
 							<a href="contact-us.html">Contact Us</a>
@@ -84,6 +95,7 @@
 				 		</div>
 				  </div>
 				<a href="faq.html">FAQ</a>
+			<a href="http://www.believehomecareblog.com">Blog</a>
 				<a href="partners.html">Partners</a>
 				<a href="#">EOE policy</a>
 				<a href="#">Privacy Policy</a>
@@ -93,7 +105,7 @@
 
 			<span class="burger" onclick="openNav()">&#9776;</span>
 		<div class="login">
-			<a id="login" href="http://45.79.186.167//platform/">Login</a>
+			<a id="login" href="/platform/">Login</a>
 			<a id="contact" class="btn-outline" href="contact-us.html">Contact Us</a>
 			<a id="header-phone" class="btn-filled">(215) 366-2878</a>
 
@@ -107,7 +119,7 @@
 			<p>Believe combines the highest quality and highest paid caregivers with smart technology to bring greater independence to older adults and peace of mind to families.</p>
 			<p>Believe that home care can be better.</p>
 			<div class="small blue">
-			<p>Call us now for free consultation</p>
+			<p>Call us now for a free consultation</p>
 
 			<a href="#" class="btn-filled"><i class="material-icons">phone</i> (215) 366-2878</a>
 			</div>
@@ -233,10 +245,10 @@
 					</div>
 					<div class="col-lg-6 col-md-6">
 						<p class="with-icon medal">
-							Believe Care Pros are extensively trained and paid 10% to 15% more at than other home care agencies.
+							Believe Care Pros are extensively trained and paid 10 to 15% more than other home care agencies.
 						</p>
 						<p class="with-icon shield">
-							And just in case - each Believe Care Pro is insured up to $2 million for liability, theft and auto.
+							And just in case - each Believe Care Pro is insured up to $3 million for liability, theft and auto.
 						</p>
 					</div>
 				</div>
@@ -322,7 +334,7 @@
 						</div>
 						<div class="with-icon transportation">
 							<p class="blue semibold">Transportation</p>
-							<p>Wherever you’re going, get a ride in a caregivers car - or yours if you prefer.</p>
+							<p>Wherever you’re going, get a ride in a caregiver's car - or yours if you prefer.</p>
 						</div>
 						<div class="with-icon personal-care">
 							<p class="blue semibold">Personal Care & Hygiene </p>
@@ -424,12 +436,16 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about-us.html">About</a></li>
 				<li><a href="faq.html">FAQS</a></li>
+				<li><a href="http://www.believehomecareblog.com">Blog</a></li>
 				<li><a class="footer-caregiver" href="caregivers.html">Caregivers</a></li>
 				<li><a href="partners.html">Partners</a></li>
 				<li><a href="#">Privacy Policy</a></li>
 				<li><a href="#">EOE</a></li>
 				<li><a href="#">Terms of Use</a></li>
 			</ul>
+			<div class="address">
+				<a href="https://goo.gl/maps/MisWdqqrVyM2" target="_blank">Believe Home Care, LLC. 196 W. Ashland St., Doylestown, PA 18901</a>
+			</div>
 		</div>
 		<div class="social">
 			<a href="https://www.facebook.com/BelieveHomeCareLLC/"><img src="images/facebook.svg" alt=""></a>
@@ -441,6 +457,10 @@
 			<a class="btn-outline" href="contact-us.html">Contact Us</a>
 			<a class="btn-filled">(215) 366-2878</a>
 		</div>
+		<div class="address mobile">
+				<a href="https://goo.gl/maps/MisWdqqrVyM2" target="_blank">Believe Home Care, LLC. 196 W. Ashland St., Doylestown, PA 18901</a>
+			</div>
+		
 	</div>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 	<script type="text/javascript" src="js/script.js"></script>
@@ -479,7 +499,7 @@
         var form_data = jQuery(this).serialize();
         jQuery.ajax({
             type: "POST",
-            url: "/platform/api/v1/who-needs-care/",
+            url: "https://45.79.186.167/platform/api/v1/who-needs-care/",
             data: form_data,
             dataType: 'json',
         }).done(function () {
@@ -491,10 +511,10 @@
                 alert(key + ": " + value);
                // $("#errorMessage").append("<p class='errorMessage'>Error:" + value + "</p>");
 			   if (key=="phone"){
-					$('#comm-phone input').reset();
+					jQuery('#comm-phone input')[0].reset();
 				}
 				if (key=="email"){
-					$('#comm-email input').reset();
+					jQuery('#comm-email input')[0].reset();
 				}
             });
         });
