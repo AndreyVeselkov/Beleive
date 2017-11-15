@@ -1,2 +1,3 @@
 User-agent: *
 Host: 45.79.186.167
+Sitemap: http://45.79.186.167/sitemap.xml
