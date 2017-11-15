@@ -1,0 +1,3 @@
+User-agent: *
+Host: believehomecare.com
+Sitemap: http://believehomecare.com/sitemap.xml
