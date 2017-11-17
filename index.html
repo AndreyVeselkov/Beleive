@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Believe Home</title>
@@ -58,7 +57,7 @@
 				<div class="mob-buttons">
 					<div class="row">
 						<div class="col-xs-6">
-							<a href="/platform/">Login</a>
+							<a href="http://45.79.186.167/platform/">Login</a>
 						</div>
 						<div class="col-xs-6">
 							<a href="contact-us.html">Contact Us</a>
@@ -96,7 +95,7 @@
 
 			<span class="burger" onclick="openNav()">&#9776;</span>
 		<div class="login">
-			<a id="login" href="/platform/">Login</a>
+			<a id="login" href="http://45.79.186.167/platform/">Login</a>
 			<a id="contact" class="btn-outline" href="contact-us.html">Contact Us</a>
 			<a id="header-phone" class="btn-filled">(215) 366-2878</a>
 
@@ -435,7 +434,7 @@
 				<li><a href="#">Terms of Use</a></li>
 			</ul>
 			<div class="address">
-				<a href="https://goo.gl/maps/ULfKRmyAhx72" target="_blank">Believe Home Care, LLC. 196 W. Ashland St., Doylestown, PA 18901</a>
+				<a href="https://goo.gl/maps/14SbBuhAg3R2" target="_blank">Believe Home Care, LLC. 196 W. Ashland St., Doylestown, PA 18901</a>
 			</div>
 		</div>
 		<div class="social">
@@ -449,8 +448,7 @@
 			<a class="btn-filled">(215) 366-2878</a>
 		</div>
 		<div class="address mobile">
-			
-				<a href="https://goo.gl/maps/ULfKRmyAhx72" target="_blank">Believe Home Care, LLC. 196 W. Ashland St., Doylestown, PA 18901</a>
+				<a href="https://goo.gl/maps/14SbBuhAg3R2" target="_blank">Believe Home Care, LLC. 196 W. Ashland St., Doylestown, PA 18901</a>
 			</div>
 		
 	</div>
@@ -458,7 +456,8 @@
 	<script type="text/javascript" src="js/script.js"></script>
   	<script type="text/javascript" src="js/carousel.js"></script>
    	<script type="text/javascript" src="js/validate.js"></script>
-      <script type="text/javascript">
+    <script type="text/javascript">
+	
     function yesnoCheck() {
         if (document.getElementById('radio-2').checked) {
             document.getElementById('their-name').style.display = 'block';
@@ -485,8 +484,6 @@
             }
         }
     });
-		
-	
 	
 	jQuery("#home").submit(function () {
         var form_data = jQuery(this).serialize();
@@ -497,23 +494,30 @@
             dataType: 'json',
         }).done(function () {
             document.getElementById("success").style.display = "block";
-			$("#contact-us")[0].reset();
+			$("#home")[0].reset();
         }).fail(function (data) {
             console.log(data.responseJSON);
             $.each(data.responseJSON, function (key, value) {
                 alert(key + ": " + value);
                // $("#errorMessage").append("<p class='errorMessage'>Error:" + value + "</p>");
 			   if (key=="phone"){
-					$('#comm-phone input').reset();
+					jQuery('#comm-phone input')[0].reset();
 				}
 				if (key=="email"){
-					$('#comm-email input').reset();
+					jQuery('#comm-email input')[0].reset();
 				}
             });
         });
 			
 			return false;
     });
+					   
 </script>
+<!--<script>
+$('html,body').animate({
+  scrollTop: $(window.location.hash).offset().top
+});
+
+</script>-->
 </body>
 </html>
