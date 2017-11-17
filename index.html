@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109299741-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-109299741-1');
-</script>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -467,8 +458,7 @@
 	<script type="text/javascript" src="js/script.js"></script>
   	<script type="text/javascript" src="js/carousel.js"></script>
    	<script type="text/javascript" src="js/validate.js"></script>
-    <script type="text/javascript">
-	
+      <script type="text/javascript">
     function yesnoCheck() {
         if (document.getElementById('radio-2').checked) {
             document.getElementById('their-name').style.display = 'block';
@@ -495,40 +485,35 @@
             }
         }
     });
+		
+	
 	
 	jQuery("#home").submit(function () {
         var form_data = jQuery(this).serialize();
         jQuery.ajax({
             type: "POST",
-            url: "https://45.79.186.167/platform/api/v1/who-needs-care/",
+            url: "http://45.79.186.167/platform/api/v1/who-needs-care/",
             data: form_data,
             dataType: 'json',
         }).done(function () {
             document.getElementById("success").style.display = "block";
-			$("#home")[0].reset();
+			$("#contact-us")[0].reset();
         }).fail(function (data) {
             console.log(data.responseJSON);
             $.each(data.responseJSON, function (key, value) {
                 alert(key + ": " + value);
                // $("#errorMessage").append("<p class='errorMessage'>Error:" + value + "</p>");
 			   if (key=="phone"){
-					jQuery('#comm-phone input')[0].reset();
+					$('#comm-phone input').reset();
 				}
 				if (key=="email"){
-					jQuery('#comm-email input')[0].reset();
+					$('#comm-email input').reset();
 				}
             });
         });
 			
 			return false;
     });
-					   
 </script>
-<!--<script>
-$('html,body').animate({
-  scrollTop: $(window.location.hash).offset().top
-});
-
-</script>-->
 </body>
 </html>
