@@ -5116,6 +5116,9 @@ img#scott, #terry img{
 .contact-form {
 	max-height: 852px;
 }
+.contact-form.contact {
+	height: 852px;
+}
 .container {
     width: 960px;
 }   
@@ -5127,5 +5130,6 @@ img#scott, #terry img{
 }
 .contact-form.contact {
     padding: 61px 0 250px 0;
+	max-height: 908px;
 }
 }
