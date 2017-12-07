@@ -5114,10 +5114,10 @@ img#scott, #terry img{
 
 @media only screen and (min-width: 1200px){
 .contact-form {
-	max-height: 852px;
+	height: 875px;
 }
 .contact-form.contact {
-	height: 852px;
+	height: 875px;
 }
 .container {
     width: 960px;
@@ -5126,10 +5126,10 @@ img#scott, #terry img{
 @media only screen and (min-width: 1500px){
 .contact-form {
     padding: 82px 0 250px 0;
-	max-height: 915px;
+	height: 920px;
 }
 .contact-form.contact {
     padding: 61px 0 250px 0;
-	max-height: 908px;
+	height: 920px;
 }
 }
