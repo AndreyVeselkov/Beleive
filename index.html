@@ -499,7 +499,7 @@
         var form_data = jQuery(this).serialize();
         jQuery.ajax({
             type: "POST",
-            url: "https://believehomecare.com/platform/api/v1/who-needs-care/",
+            url: "/platform/api/v1/who-needs-care/",
             data: form_data,
             dataType: 'json',
         }).done(function () {
